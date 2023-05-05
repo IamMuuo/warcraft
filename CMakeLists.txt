@@ -26,6 +26,19 @@ add_library(
   ${GAME_CORE_SOURCES}
 )
 
+
+set(
+  RESOURCE_ENGINE_SOURCES
+  resources/resourceHolder.cpp
+)
+
+add_library(
+  resource-engine
+  ${RESOURCE_ENGINE_SOURCES}
+)
+
+
+
 add_executable(warcraft main.cpp)
 
 target_link_libraries(
@@ -33,7 +46,7 @@ target_link_libraries(
 
   PUBLIC
 
-  sfml-graphics sfml-window sfml-network sfml-system
+  resource-engine  sfml-window sfml-graphics sfml-network sfml-system
 )
 
 target_link_libraries(
