@@ -19,6 +19,7 @@ file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 set(
   GAME_CORE_SOURCES
   game/game.cpp
+  entities/aircraft.cpp
 )
 
 add_library(
