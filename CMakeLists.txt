@@ -20,6 +20,7 @@ set(
   GAME_CORE_SOURCES
   game/game.cpp
   entities/aircraft.cpp
+  entities/scenenode.cpp
 )
 
 add_library(
